@@ -44,8 +44,8 @@ const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION']
 const config = require('./config.json');
 const fs = require('fs')
 const net = require('net');
-const port = 7894;
-const host = '0.0.0.0';
+const port = config.port
+const host = config.address
 let chatbot
 
 let countDown = 60
@@ -56,11 +56,8 @@ server.listen(port, host, () => {
     console.log('TCP Server is running on port ' + port +'.');
 });
 
-server.on("connection", (client) =>{
+server.on("connection", (client)=>{
     chatbot=client
-    chatbot.on('data', (data) => {
-
-    })
 });
 
 

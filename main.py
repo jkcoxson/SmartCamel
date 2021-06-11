@@ -4,8 +4,12 @@ from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 import json
 
-HOST = '192.168.1.6'  # The server's hostname or IP address
-PORT = 7894           # The port used by the server
+
+f = open("./config.json", "r")
+config = json.loads(f.read())
+
+HOST = config["address"]  # The server's hostname or IP address
+PORT = config["port"]     # The port used by the server
 
 bot = ChatBot(
     'CamelBot',
