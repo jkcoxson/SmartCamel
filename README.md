@@ -15,5 +15,5 @@ The bot will learn from conversations that happen in your learn channel with a 6
 This was an interesting one day project to get my feet wet in machine learning and python sockets. 
 This will be incorporated into CamelBot eventually
 ## Issues
-There is a memory leak with the bot listening for a response from the python chatbot.
-The python program will crash if the Discord bot isn't already running
+- There is a memory leak with the bot listening for a response from the python chatbot.
+- The python program will crash if the Discord bot isn't already running
