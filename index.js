@@ -45,7 +45,7 @@ const config = require('./config.json');
 const fs = require('fs')
 const net = require('net');
 const port = config.port
-const host = config.address
+const host = config.host
 let chatbot
 
 let countDown = 60
