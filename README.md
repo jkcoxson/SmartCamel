@@ -8,7 +8,7 @@ AI discord bot that learns from conversations on Discord and chats with people
 3. Install Python
 4. ```pip3 install chatterbot```
 5. Create config.json
-```{"token":"pastetokenhere","chatChannel:"","learnChannel":""}```
+```{"token":"pastetokenhere","chatChannel:"","learnChannel":"","address":"127.0.0.1","port":7894,"host":"0.0.0.0"}```
 6. Run ```~chat``` and ```~learn``` in their respective channels
 The bot will learn from conversations that happen in your learn channel with a 60 second timeout.
 ## About
